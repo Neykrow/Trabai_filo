@@ -1,0 +1,469 @@
+@font-face {
+    font-family: "Paasse";
+    src: url("fonts/Paasse Handwriting.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Parasite";
+    src: url("fonts/PARASITE.ttf") format("TrueType");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PaperRib";
+    src: url("fonts/Paper\ Rib\ Reg\ Personal\ Use.ttf") format("TrueType");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RomanAntique";
+    src: url("fonts/RomanAntique.ttf") format("TrueType");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Leander";
+    src: url("fonts/Leander.ttf") format("TrueType");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Seagram";
+    src: url("fonts/Seagram\ tfb.ttf") format("TrueType");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ogirema";
+    src: url("fonts/Ogirema.ttf") format("TrueType");
+    font-weight: normal;
+    font-style: normal;
+}
+        /*
+        Pra mim do futuro:
+            -> Sim, pode ter mais de um @font-face, oq muda eh so o "font-family" ali ali oh
+            -> Se for fazer outra fonte, so da ctrl c/v pra facilitar kk
+        */
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.part_antiga_img, .medieval_div_img, .cont_div_img{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+.aviso{
+    font-size: 18px;
+    color: whitesmoke;
+    text-align: center;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body{
+    margin: 0 0 0 0;
+    background-color: rgb(37, 20, 21);
+}
+.tudin{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.gr_tt{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+
+    background-color: rgba(6, 0, 15, 0.5);
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.2) inset, 0px -12px 20px rgba(117, 64, 68, 0.2) inset;
+}
+.titulo_principal {
+    font-family: "Parasite";
+    font-size: 100px;
+    font-weight: normal;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px 0 40px 0;
+    margin: 0 0 0 0;
+}
+.tt_bax{
+    font-family: "RomanAntique";
+    font-size: 40px;
+    font-weight: normal;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0px 0 10px 0;
+    margin: 0 0 0 0;
+}
+.tt_bax_2{
+    font-family: "RomanAntique";
+    font-size: 30px;
+    font-weight: normal;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0px 0 80px 0;
+    margin: 0 0 0 0;
+}
+.part_antiga_img{
+    text-align: left;
+    background-image: url(imgs/Socrates.webp);
+    margin: 20px 0 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: end center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+.medieval_div_img{
+    text-align: left;
+    background-image: url(imgs/F_MEDIEVAL.webp);
+    margin: 0 0 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: end center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+.cont_div_img{
+    text-align: left;
+    background-image: url(imgs/contempo.png);
+    margin: 0 0 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: end center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.text_p_ant{
+    margin: 0 0 0 10px;
+    font-family: "Leander";
+    font-size: 40px;
+    font-weight: normal;
+    color: whitesmoke;
+    padding: 10px 20px 0px 20px;
+}
+.box-textin{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: whitesmoke;
+    width: 700px;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    font-family: "Leander";
+    font-size: 15px;
+}
+.box-textin_med{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: whitesmoke;
+    width: 700px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Ogirema";
+    font-size: 15px;
+    justify-self: center;
+}
+.box-textin_cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: whitesmoke;
+    width: 700px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Ogirema";
+    font-size: 15px;
+    justify-self: end;
+}
+.desc_p_ant{
+    padding: 10px;
+    font-size: 25px;
+    margin: 0 0 0 0;
+    padding: 5px 5px 5px 10px;
+}
+.desc_p_ant_bax{
+    padding: 10px;
+    font-size: 18px;
+    margin: 0 10px 0 0;
+    padding: 5px 10px 5px 30px;
+}
+.span_desc_bax{
+    font-weight: bold;
+}
+.frases{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 10px 50px 20px;
+    padding: 5px 0px 5px 30px;
+}
+.creti{
+    color: whitesmoke;
+    background-color: rgba(37, 7, 7, 0.3);
+    border: none;
+    border-radius: 15px 0 0 0;
+    font-size: 20px;
+    width: 400px;
+    column-gap: 1fr;
+    justify-self: end;
+    font-family: "Leander";
+    backdrop-filter: blur(10px);
+}
+.creti_med{
+    color: whitesmoke;
+    background-color: rgba(37, 7, 7, 0.3);
+    border: none;
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+    width: 400px;
+    column-gap: 1fr;
+    justify-self: center;
+    font-family: "Ogirema";
+    backdrop-filter: blur(10px);
+}
+.creti_cont{
+    color: whitesmoke;
+    background-color: rgba(37, 7, 7, 0.3);
+    border: none;
+    border-radius: 0 15px 0 0;
+    font-size: 20px;
+    width: 400px;
+    column-gap: 1fr;
+    justify-self:start;
+    font-family: "Ogirema";
+    backdrop-filter: blur(10px);
+}
+.creditin{
+    padding: 10px 0 5px 15px;
+    margin: 0 0 0 0;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.desc_cred{
+    padding: 0 0 5px 15px;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+.link{
+    color: whitesmoke;
+}
+.link:visited{
+    color: whitesmoke;
+}
+.med_txt{
+    margin: 0 0 0 10px;
+    font-family: "Seagram";
+    font-size: 57px;
+    font-weight: normal;
+    color: whitesmoke;
+    padding: 10px 20px 0px 20px;
+    justify-self: center;
+}
+.cont_txt{
+    margin: 0 0 0 10px;
+    font-family: "Leander";
+    font-size: 40px;
+    font-weight: normal;
+    color: whitesmoke;
+    padding: 10px 20px 0px 20px;
+    justify-self: end;
+}
+
+
+
+
+.fundo{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 70px 0 0 0;
+    background-color: rgba(6, 0, 15, 0.5);
+    box-shadow: 0px 12px 20px rgba(117, 64, 68, 0.2) inset;
+}
+
+
+
+/*  LEMBRAR DE COMO FUNFA CODIGOS:
+        CSS:
+            Background-color -> mete a cor do fundo do objeto, texto, etc... pra alguma cor
+            color -> cor do texto
+            height -> altura (px, o 0 n precisa de px)
+            width -> largura (px, o 0 n precisa de px)
+            border -> mete ou tira a borda de objetos, textos, etc....
+            border-radius -> arredonda as pontas do objeto, texto, etc... quanto mais px, mais arredondado
+            border-style -> muda o estilo da borda, como deixando ou removendo sombras
+            border-width -> largura da borda
+            cursor -> como seu mouse fica, tipo normal (setinha) ou apontando (maozinha)
+            margin -> distancia entre a borda de um elemento de outro
+            padding -> distancia entre o elemento e a borda
+            font-weight -> coloca em negrito ou parecido
+            font-size -> tamanho da fonte
+            opacity -> opacidade de uma cor, entre 0 e 1
+            transition -> transiçoes suaves. precisa de 2 informaçoes, oq vc vai transicionar e quanto tempo vai durar (1s), alem disso, vc pode adicionar varias coisas na transiçao, separando elas com ","
+            box-shadow -> faz uma "sombra" da coisa. precisa de 4 informaçoes, horizontal (px, esquerda= negativo, direita= positivo), vertical (px, cima= negativo, baixo= positivo), blur (quanto maior os px, maior o blur) e cor (geralmente se usa o rgba)
+            display -> faz com que um elemente ocupe ou n ocupe toda a "linha" no site
+
+            .:hover -> basicamente muda o buttao, sla oq mais, quanto tu passa com o mouse em cima
+            .:active -> memo que o hover, porem so quando clica
+
+            button(ou qualquer outra coisa, tipo h1, p, etc...) -> se referencia a um ou mais elementos, exp:
+                HTML:
+                    <button class"aiai">
+                        hehehehe
+                    </button>
+
+                    <button class"nada">
+                        lalalallalala
+                    </button>
+                
+                CSS:
+                    button{
+                        background-color: black;
+                        color: white;
+                    }
+
+                        vai mudar os 2, pois so referencia o "button"
+
+            . -> se usa pra referenciar uma classe, exp:
+                HTML:
+                    <button class"aiai">
+                        hehehehe
+                    </button>
+
+                    <button class"nada">
+                        lalalallalala
+                    </button>
+                
+                CSS:
+                    .aiai{
+                        background-color: black;
+                        color: white;
+                    }
+                
+
+                        vai mudar o primeiro botao, pois sua classe eh "aiai"
+            
+            No  N  Ne
+             \ | /
+              \|/
+           O --+-- L       <-Rosa dos ventos
+              /|\
+             / | \
+            So  S  Se
+
+                Margin
+            +---Border----------------------------------------+
+            |   Padding                                       |
+            |  +Content------------------------------------+  |  
+            |  |                                           |  |
+            |  |                                           |  |
+            |  |                                           |  |
+            |  +Content------------------------------------+  |
+            |   Padding                                       |
+            +---Border----------------------------------------+
+                Margin
+
+            Margin e Padding:
+                Norte, Leste, Sul e Oeste
+
+            Border:
+                Noroeste, Nordeste, Sudeste e Sudoeste
+            
+
+            CORES:
+                tu pode usar o exp:
+                    rgb -> rgb(200, 0, 0)
+                        vai de 0 a 255
+                ou
+                    hexaadecimal -> #ad674c
+
+                rgba() -> rgb normal, mas com 1 valor a mais, a opacidade (0 a 1), exp:
+                    rgba(132, 98, 255, 0.4)
+
+    */                                                                
+
+/*  LEMBRAR DE COMO FUNFA CODIGOS:
+        HTML:
+        <>
+
+            <buttom> -> butao
+            <p> -> paragrafo
+
+            <a> -> ancora, tu mete um link la dentro, exp: 
+                <a href="https://www.youtube.com/"> Youtube </a>           
+
+            <style> -> tu consegue fazer o mesmo que no css, exp
+                <style>
+                    button{
+                        background-color: red;          faz todos os botoes vermelhos
+                    }
+                </style>
+
+            <strong> -> faz o texto ficar bold
+            <u> -> faz o texto ter underline
+            <span> -> n faz nd, mas vc pode dar uma classe pra ele e modificar a vontade uma parte do texto
+            <!DOCTYPE html> -> faz com que o browser use a versao mais recente do html
+            <html> -> :v auto explicativo
+            <head> -> oq n aparece na pagina
+            <body> -> oq aparece na pagina
+            <title> -> oq aparece como nome na aba
+            <link> -> usado pra linkar elementos, como o html e css
+            <input> -> usado para fazer coisas, como caixas de pesquisa (type="text"), aqueles botoes de check
+
+        ATRIBUTOS
+
+            href -> linka alguma coisa, exp
+                <a href="https://www.youtube.com/"> Youtube </a>        link para o Ytb
+
+                <link rel="stylesheet" href="style.css">                linka o html com CSS
+                    o nome do arquivo no href tanto faz
+
+
+            target -> pode fazer quando tu clica em um link abrir outra aba, exp:
+                <a href="https://www.youtube.com/" target=""> Youtube </a>        link para o Ytb normal
+
+                <a href="https://www.youtube.com/" target="_blank"> Youtube </a>        link para o Ytb em outra aba
+
+            class -> coloca uma classe em algo para o diferenciar, exp:
+                <button class="aiai">
+                    hehe
+
+            placeholder -> mete um texto ou algo so pra ter alguma coisa mostrando no elemento "<input>"
+                </button>
+
+*/
